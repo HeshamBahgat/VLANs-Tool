@@ -9,10 +9,11 @@ class Validate_IP(object):
         pass
 
     def device_ip(self, ip_address):
+        print("\n")
         # Checking IP address validity
         # Checking octets
         ip = ip_address.split(".")
-        if (len(ip) == 4) and \
+        if (len(ip) == 4) and ("" not in ip) and \
                 (1 <= int(ip[0]) <= 223) and \
                 (int(ip[0]) != 127) and \
                 (int(ip[0]) != 169 or int(ip[1]) != 254) and \
@@ -25,10 +26,10 @@ class Validate_IP(object):
 
     def server_ip(self, ip_address):
         print("\n")
-        # Checking IP address validity
+        # Checking IP address validity for servers (localhost is allowed)
         #Checking octets
         ip = ip_address.split(".")
-        if (len(ip) == 4) and \
+        if (len(ip) == 4) and ("" not in ip) and \
             (1 <= int(ip[0]) <= 223) and \
             (int(ip[0]) != 169 or int(ip[1]) != 254) and \
             (0 <= int(ip[1]) <= 255 and 0 <= int(ip[2]) <= 255 and 0 <= int(ip[3]) <= 255):
