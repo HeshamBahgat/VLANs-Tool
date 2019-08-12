@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 from credential import Get_Credential
 from sync_data import Sync_Data
@@ -10,7 +12,7 @@ init()
 def check_name(dict_vlan, host_name, vlan_name, device):
     for k, v in dict_vlan[host_name].items():
         if vlan_name == v:
-            print(Fore.RED + f"We Found Dup vlan_name vlan {k}, named {v} on the {device} ")
+            print(Fore.RED + f"We Found Dup vlan_name vlan {k}, named {v} on the {device}")
             return (k, v)
 
 def get_vlan_name():
@@ -215,6 +217,7 @@ all_sql_vlan = {}
 host_name = ""
 
 def Main():
+    """ Interview Task"""
 
     global all_gns3_vlan
     global all_sql_vlan
