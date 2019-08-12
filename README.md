@@ -4,7 +4,10 @@ Create, Modify, Delete and Sync Vlans between Switch and sql Database
 
 1-
 #######MySQL SETUP#######
+
 apt-get install software-properties-common  python-dev build-essential libssl-dev libffi-dev  libxml2-dev python3-dev libxslt1-dev zlib1g-dev less -y
+
+
 apt-get install mariadb-client-core-10.3
 service mysql start
 mysql -u root -p
