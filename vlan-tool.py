@@ -3,7 +3,6 @@
 import sys
 from credential import Get_Credential
 from sync_data import Sync_Data
-from create_vlan import Create_Vlans
 from colorama import init, deinit, Fore, Style
 import time
 init()
