@@ -18,8 +18,11 @@ Enter password: (blank password)
 apt-get install python3 python3-pip python3-virtualenv python3-venv -y
 
 virtualenv .venv
+
 source .venv/bin/activate
+
 pip3 install -r requirements.txt
+
 
 3-
 python3 vlan-tool.py
@@ -28,13 +31,22 @@ python3 vlan-tool.py
 4- After typing switch & sql ips + credentials the below list will the show up
 
 Use this tool to:
+
 a - Sync-To(From MYSQL to Sw)
+
 b - Sync-From(From Sw to SQL)
+
 c - Create VLAN
+
 d - update vlan
+
 e - delete vlan
+
 f - Connect Another Device
+
 g - Exit program
+
 choose(a, b, c, d, e)
+
 Enter your choice:
 
