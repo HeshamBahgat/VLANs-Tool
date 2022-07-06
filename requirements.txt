@@ -9,7 +9,7 @@ future==0.17.1
 idna==2.8
 Jinja2==2.11.3
 junos-eznc==2.2.1
-lxml==4.6.3
+lxml==4.9.1
 MarkupSafe==1.1.1
 napalm==2.4.0
 ncclient==0.6.6
